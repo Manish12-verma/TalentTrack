@@ -1,6 +1,5 @@
-import { useState } from "react"
 
-const Header = () => {
+const Header = (props) => {
 
   // const [username,setUsername] = useState('')
 
@@ -13,7 +12,9 @@ const Header = () => {
   const logoutHandler=()=>{
    
      localStorage.setItem('loggedInUser','')
-     window.location.reload()
+     // eslint-disable-next-line react/prop-types
+     props.changeUser('')
+     //window.location.reload()
   }
 
   return (
