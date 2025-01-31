@@ -6,7 +6,7 @@ const NewTask = ({data}) => {
                     <h4 className="text-sm font-semibold">{data.date}</h4>
                  </div>
                  <h2 className="mt-5 text-2xl font-semibold">{data.title}</h2>
-                 <p className="text-sm mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore soluta itaque consectetur laudantium modi aspernatur placeat laboriosam maxime. Illum officia repellat perspiciatis pariatur tenetur voluptates sequi dolor eligendi officiis rerum.</p>
+                 <p className="text-sm mt-3">{data.description}</p>
                  <div>
                     <button className='bg-blue-500 py-1 px-2 rounded text-sm mt-4'>
                         Accept Task
