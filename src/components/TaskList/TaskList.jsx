@@ -1,4 +1,3 @@
-
 import AcceptTask from "./AcceptTask"
 import CompleteTask from "./CompleteTask"
 import FailedTask from "./FailedTask"
@@ -6,7 +5,7 @@ import NewTask from "./NewTask"
 
 const TaskList = ({data}) => {
 
-   console.log(data);
+  
   return (
     <div id='tasklist' className="h-[55%] w-full overflow-x-auto py-5 mt-10 flex items-center justify-start gap-5 flex-nowrap">
         {data.tasks.map((elem,idx)=>{
